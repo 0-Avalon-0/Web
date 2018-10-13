@@ -1,0 +1,9 @@
+transition 属性各个浏览器兼容性不一样，有各自对应的写法
+
+-webkit-transition: all 0.5s ease-in;/* Safari & Chrome 9*/
+-moz-transition: all 0.5s ease-in;/* FireFox 9*/
+-ms-transition: all 0.5s ease-in; /* IE 9*/
+-o-transition: all 0.5s ease-in;/* Opera 9*/
+
+all是选择的属性，此处为all; 0.5s为变化持续时间; ease-in / ease / ease-out 为动画效果; 后面可以再跟一个动画延迟时间(单位秒)
+
