@@ -11,3 +11,12 @@ padding四个值的顺序是上右下左，如果没有下则默认与上一致�
 
 z-index:设置堆叠属性，高的总是呈现在低的前面
 
+
+visibility:hidden
+display : none
+前者隐藏一个元素，但仍需占用对应的空间。
+后者全部隐藏。
+
+参数为e||window.event 表示e或window.event 这句话是跨浏览器的写法 支持这两种方式的 浏览器才能进入该方法。
+事件对象是引发事件函数的第一个参数。
+e.g.:function(evt){}
