@@ -38,8 +38,34 @@ ORMapping：数据记录->Java对象
 前端框架：React/Angular/VUE
 
 
+前端服务器负责生成前端浏览器需要的javascript
+
+前端 单页面应用 （不支持回退）
+组件：html,css,js / typescript编写
+路由（针对单页面应用）：只刷新部分，页面不跳转
+为了能回退，刷新，产生多页面应用的效果，现实现 地址栏和组件的关联。
 
 
+服务：
+通过网络进行前后端交互，通常采用http / https
+
+ng g(generate) s(service)
+
+javascript 单线程，不会单独等一个函数执行完
+e.g.:
+d = getData();
+//此处 d 没有值
+
+但是有单线程非阻塞模型，异步服务
+使用回调函数来获得上述数据
+
+
+RESTful api服务：
+形式 谓词+宾语
+
+get / post / put （全部更新） / patch（部分更新） / delete
+
+URL 不应有动词（考试会考）
 
 
 
