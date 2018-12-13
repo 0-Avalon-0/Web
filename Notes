@@ -1,0 +1,77 @@
+transition 属性各个浏览器兼容性不一样，有各自对应的写法
+
+-webkit-transition: all 0.5s ease-in;/* Safari & Chrome 9*/
+-moz-transition: all 0.5s ease-in;/* FireFox 9*/
+-ms-transition: all 0.5s ease-in; /* IE 9*/
+-o-transition: all 0.5s ease-in;/* Opera 9*/
+
+all是选择的属性，此处为all; 0.5s为变化持续时间; ease-in / ease / ease-out 为动画效果; 后面可以再跟一个动画延迟时间(单位秒)
+
+padding四个值的顺序是上右下左，如果没有下则默认与上一致，没有左则与右一致。
+
+z-index:设置堆叠属性，高的总是呈现在低的前面
+
+
+visibility:hidden
+display : none
+前者隐藏一个元素，但仍需占用对应的空间。
+后者全部隐藏。
+
+参数为e||window.event 表示e或window.event 这句话是跨浏览器的写法 支持这两种方式的 浏览器才能进入该方法。
+事件对象是引发事件函数的第一个参数。
+e.g.:function(evt){}
+
+
+
+后端渲染 / 前端渲染
+后端渲染：整体刷新，提交业务后端处理，前端只负责显示网页（早期刷新速度慢）
+前端渲染：后端只需传数据（数组，对象）到前端，交由前端渲染。后端仍需要处理数据层提取的数据或者前端上传的数据。
+业务逻辑放在前端不安全，且不应该。应交由后端处理。
+前端渲染网页模板放在前端服务器。
+
+ORMapping：数据记录->Java对象
+或者类对应表的名字即可，记录->对象
+
+
+真正前端负责：Rendering，Ajax，router，data-binding（使用javascript编写）
+
+前端框架：React/Angular/VUE
+
+
+前端服务器负责生成前端浏览器需要的javascript
+
+前端 单页面应用 （不支持回退）
+组件：html,css,js / typescript编写
+路由（针对单页面应用）：只刷新部分，页面不跳转
+为了能回退，刷新，产生多页面应用的效果，现实现 地址栏和组件的关联。
+
+
+服务：
+通过网络进行前后端交互，通常采用http / https
+
+ng g(generate) s(service)
+
+javascript 单线程，不会单独等一个函数执行完
+e.g.:
+d = getData();
+//此处 d 没有值
+
+但是有单线程非阻塞模型，异步服务
+使用回调函数来获得上述数据
+
+
+RESTful api服务：
+形式 谓词+宾语
+
+get / post / put （全部更新） / patch（部分更新） / delete
+
+URL 不应有动词（考试会考）
+
+
+
+
+
+
+
+
+
